@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
     <title>pomodoro timer</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <h1>timer</h1>
-</body>
-
+  <body>
+    <div class="background"></div>
+    <div class="content">
+      <h4 class="status">f o c u s</h4>
+      <h1 class="time">25:00</h1>
+      <button class="start-btn">start</button>
+      <div class="controls">
+        <button class="pause">pause</button> 
+        <button class="stop">end</button>
+      </div>
+    </div>
+    <script src="timer.js"></script>
+  </body>
+  <audio id="session-switch-sound" src="../public/audio/complete-alert.wav" preload="auto"></audio>
 </html>
